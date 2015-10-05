@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C65C9301BC1B85200C19A38 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C65C92F1BC1B85200C19A38 /* EditViewController.m */; settings = {ASSET_TAGS = (); }; };
 		758307F11BB20FC30007B2A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758307F01BB20FC30007B2A4 /* AppDelegate.m */; };
 		758307F31BB20FC30007B2A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758307F21BB20FC30007B2A4 /* main.m */; };
-		758307F61BB20FC30007B2A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758307F51BB20FC30007B2A4 /* ViewController.m */; };
+		758307F61BB20FC30007B2A4 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 758307F51BB20FC30007B2A4 /* ListViewController.m */; };
 		758307F81BB20FC30007B2A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758307F71BB20FC30007B2A4 /* Images.xcassets */; };
 		758307FB1BB20FC30007B2A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758307F91BB20FC30007B2A4 /* Main.storyboard */; };
 		758308071BB20FC30007B2A4 /* N3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758308061BB20FC30007B2A4 /* N3Tests.m */; };
@@ -30,13 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C65C92E1BC1B85200C19A38 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		2C65C92F1BC1B85200C19A38 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		758307EA1BB20FC20007B2A4 /* N3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = N3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758307EE1BB20FC30007B2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		758307EF1BB20FC30007B2A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		758307F01BB20FC30007B2A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		758307F21BB20FC30007B2A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		758307F41BB20FC30007B2A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		758307F51BB20FC30007B2A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		758307F41BB20FC30007B2A4 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		758307F51BB20FC30007B2A4 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		758307F71BB20FC30007B2A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		758307FA1BB20FC30007B2A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		758308001BB20FC30007B2A4 /* N3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = N3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +97,10 @@
 				758308101BB210850007B2A4 /* classes */,
 				758307EF1BB20FC30007B2A4 /* AppDelegate.h */,
 				758307F01BB20FC30007B2A4 /* AppDelegate.m */,
-				758307F41BB20FC30007B2A4 /* ViewController.h */,
-				758307F51BB20FC30007B2A4 /* ViewController.m */,
+				758307F41BB20FC30007B2A4 /* ListViewController.h */,
+				758307F51BB20FC30007B2A4 /* ListViewController.m */,
+				2C65C92E1BC1B85200C19A38 /* EditViewController.h */,
+				2C65C92F1BC1B85200C19A38 /* EditViewController.m */,
 				758307F71BB20FC30007B2A4 /* Images.xcassets */,
 				758307F91BB20FC30007B2A4 /* Main.storyboard */,
 				758307ED1BB20FC30007B2A4 /* Supporting Files */,
@@ -188,7 +193,7 @@
 		758307E21BB20FC20007B2A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gielez Feldhaus Goulart";
 				TargetAttributes = {
 					758307E91BB20FC20007B2A4 = {
@@ -243,10 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758307F61BB20FC30007B2A4 /* ViewController.m in Sources */,
+				758307F61BB20FC30007B2A4 /* ListViewController.m in Sources */,
 				7583081C1BB2112C0007B2A4 /* ReferenciaArtigo.m in Sources */,
 				758308161BB210D10007B2A4 /* ReferenciaLivro.m in Sources */,
 				758308191BB210F90007B2A4 /* ReferenciaSite.m in Sources */,
+				2C65C9301BC1B85200C19A38 /* EditViewController.m in Sources */,
 				758307F31BB20FC30007B2A4 /* main.m in Sources */,
 				758307F11BB20FC30007B2A4 /* AppDelegate.m in Sources */,
 				758308131BB210B20007B2A4 /* Referencia.m in Sources */,
@@ -303,6 +309,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -366,6 +373,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = N3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -377,6 +385,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = N3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -396,6 +405,7 @@
 				);
 				INFOPLIST_FILE = N3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/N3.app/Contents/MacOS/N3";
 			};
@@ -412,6 +422,7 @@
 				);
 				INFOPLIST_FILE = N3Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.furb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/N3.app/Contents/MacOS/N3";
 			};
