@@ -9,5 +9,13 @@
 #import "ReferenciaArtigo.h"
 
 @implementation ReferenciaArtigo
+@synthesize autor;
+@synthesize local;
+@synthesize titulo;
+@synthesize numeroVolume;
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Referencia: autor = %@, titulo = %@, disponivel em = <%@>", autor, titulo, local];
+}
 @end

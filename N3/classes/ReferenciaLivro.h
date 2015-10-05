@@ -9,5 +9,14 @@
 #import "Referencia.h"
 
 @interface ReferenciaLivro : Referencia
+{
+    
+}
+
+@property NSString *nomeAutor;
+@property NSString *sobrenomeAutor;
+@property NSString *titulo;
+@property NSNumber *pagina;
+@property NSNumber *ano;
 
 @end

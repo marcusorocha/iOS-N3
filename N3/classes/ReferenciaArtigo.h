@@ -9,5 +9,12 @@
 #import "Referencia.h"
 
 @interface ReferenciaArtigo : Referencia
+{
+    
+}
 
+@property NSString *autor;
+@property NSString *titulo;
+@property NSString *local;
+@property NSNumber *numeroVolume;
 @end

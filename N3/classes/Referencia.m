@@ -10,12 +10,12 @@
 
 @implementation Referencia
 
-@synthesize autor;
+@synthesize autores;
 @synthesize ano;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"Referencia: autor = %@, ano = %@", autor, ano];
+    return [NSString stringWithFormat:@"Referencia: autor = %@, ano = %@", autores, ano];
 }
 
 @end

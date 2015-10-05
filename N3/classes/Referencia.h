@@ -13,7 +13,7 @@
     
 }
 
-@property NSString *autor;
+@property NSMutableArray *autores;
 @property NSNumber *ano;
 
 @end
