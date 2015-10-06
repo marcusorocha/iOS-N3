@@ -18,7 +18,7 @@
     
     Referencia *r1 = [[Referencia alloc] init];
     
-    r1.autor = [NSString stringWithFormat:@"Gielez"];
+    [r1.autores addObject: [NSString stringWithFormat:@"Gielez"]];
     r1.ano = [NSNumber numberWithInt:2010];
     
     NSMutableString *s = [NSMutableString stringWithFormat:@"Nova string com float %g", 2.90];
@@ -43,8 +43,8 @@
     
     if ([tableColumn.identifier isEqualToString:@"AutorColumn"])
     {
-        if (r.autor)
-            cellView.textField.stringValue = r.autor;
+        if (r.autores)
+            cellView.textField.stringValue = r.stringAutores;
     }
     
     if ([tableColumn.identifier isEqualToString:@"AnoColumn"])

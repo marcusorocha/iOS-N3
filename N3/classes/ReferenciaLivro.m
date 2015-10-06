@@ -10,15 +10,12 @@
 
 @implementation ReferenciaLivro
 
-@synthesize nomeAutor;
-@synthesize sobrenomeAutor;
-@synthesize ano;
 @synthesize titulo;
 @synthesize pagina;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"Referencia: %@,%@, %@,%@, pag. %@", sobrenomeAutor, nomeAutor, titulo, ano, pagina];
+    return [NSString stringWithFormat:@"%@, %@, %@, pag. %@", [self stringAutores], titulo, [self ano], pagina];
 }
 
 

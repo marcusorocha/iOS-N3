@@ -16,4 +16,6 @@
 @property NSMutableArray *autores;
 @property NSNumber *ano;
 
+- (NSString *)stringAutores;
+
 @end

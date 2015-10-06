@@ -10,13 +10,12 @@
 
 @implementation ReferenciaSite
 
-@synthesize autor;
 @synthesize local;
 @synthesize titulo;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"Referencia: autor = %@, titulo = %@, disponivel em = <%@>", autor, titulo, local];
+    return [NSString stringWithFormat:@"%@, %@, disponivel em = <%@>", [self stringAutores], titulo, local];
 }
 
 @end
